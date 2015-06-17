@@ -2,10 +2,12 @@
 Reproduction of error 502 on Azure with Google Auth and ServiceStack
 
 ### Setup manual
+#### 1. Create Azure Web Site with new database and link it with web site
+* .NET FRAMEWORK VERSION: V4.5
 
-1. Create Azure Web Site with new database and storage
+* MANAGED PIPELINE MODE: INTEGRATED
 
-2. Web config changes
+#### 2. Web config changes
 ```XML
   <appSettings>
 	<add key="AppDb" value="{Azure connection string}" />
