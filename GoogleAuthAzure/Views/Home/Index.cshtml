@@ -1,0 +1,28 @@
+﻿@using System.Security.Policy
+@{
+    ViewBag.Title = "Login Page";
+}
+
+<div class="jumbotron">
+    <h1>Google+ Auth</h1>
+    <p class="lead">Please Sign Up with Google+ and hope that it's works</p>
+</div>
+
+<div class="row">
+    <div class="omb_login">
+        <div class="row omb_socialButtons">
+            <div class="col-xs-4">
+                <a href="/api/auth/facebook" class="btn btn-block omb_btn-facebook" id="submit_fb">
+                    <i class="fa fa-facebook visible-xs"></i>
+                    <span class="hidden-xs">Facebook</span>
+                </a>
+            </div>
+            <div class="col-xs-4">
+                <a href="/api/auth/GoogleOAuth" class="btn btn-block omb_btn-google" id="submit_gplus">
+                    <i class="fa fa-google-plus visible-xs"></i>
+                    <span class="hidden-xs">Google+</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

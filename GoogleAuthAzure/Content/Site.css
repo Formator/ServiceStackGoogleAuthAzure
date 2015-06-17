@@ -1,0 +1,45 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* SOCIAL LOGIN */
+.omb_login .omb_authTitle {
+    text-align: center;
+    line-height: 300%;
+}
+
+.omb_login .omb_socialButtons a {
+    color: white;
+    opacity: 0.9;
+}
+
+    .omb_login .omb_socialButtons a:hover {
+        color: white;
+        opacity: 1;
+    }
+
+.omb_login .omb_socialButtons .omb_btn-facebook {
+    background: #3b5998;
+}
+
+.omb_login .omb_socialButtons .omb_btn-twitter {
+    background: #00aced;
+}
+
+.omb_login .omb_socialButtons .omb_btn-google {
+    background: #c32f10;
+}
