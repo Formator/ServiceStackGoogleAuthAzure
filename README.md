@@ -3,7 +3,7 @@ Reproduction of error 502 on Azure with Google Auth and ServiceStack
 
 Setup manual:
 1. Create Azure Web Site with new database and storage
-1. Web config changes
+2. Web config changes
 ```XML
   <appSettings>
 	<add key="AppDb" value="{Azure connection string}" />
