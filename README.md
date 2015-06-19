@@ -1,5 +1,4 @@
 # ServiceStackGoogleAuthAzure
-Reproduction of error 502 on Azure with Google Auth and ServiceStack
 
 ### Setup manual
 #### 1. Create Azure Web Site with new database and link it with web site
