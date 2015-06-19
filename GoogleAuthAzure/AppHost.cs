@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Reflection;
 using System.Web;
@@ -83,6 +84,19 @@ namespace GoogleAuthAzure
                 authRepo.DropAndReCreateTables(); // Drop and re-create all Auth and registration tables
             else
                 authRepo.InitSchema();   // Create only the missing tables
+
+            GlobalResponseFilters.Add((req, res, dto) =>
+            {
+                if (!req.PathInfo.EndsWith("/auth/GoogleOAuth", true, CultureInfo.InvariantCulture))
+                {
+                    return;
+                }
+                var httpResult = dto as HttpResult;
+                if (httpResult != null && httpResult.Headers.ContainsKey("Content-Length"))
+                {
+                    httpResult.Headers.Remove("Content-Length");
+                }
+            });
         }
     }
 }
